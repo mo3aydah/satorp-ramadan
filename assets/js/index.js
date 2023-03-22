@@ -1,8 +1,8 @@
 var canvas = document.getElementById("myCanvas");
 var context = canvas.getContext("2d");
 
-var imageWidth = 4500;
-var imageHeight = 4500;
+var imageWidth = 1002;
+var imageHeight = 1000;
 
 var imageObj = new Image(imageWidth,imageHeight);
 
@@ -23,7 +23,7 @@ function DownloadCanvasAsImage(){
     });
 }
 
-imageObj.src = "assets/images/ramadan.png"; 
+imageObj.src = "assets/images/ramadan3.png"; 
 
 var downloadCardButton = document.getElementById('downloadCard');
 downloadCardButton.addEventListener('click', function(e){
@@ -35,14 +35,14 @@ downloadCardButton.addEventListener('click', function(e){
 
     // custom font
     context.textAlign = 'center';
-    context.font = "100pt Bahij";
+    context.font = "30pt Bahij";
 
     // text color
     context.fillStyle = '#375195';
 
     // center and make text
     textWidth = (imageWidth - imageWidth / 2)
-    textHeight = (imageHeight - 750)
+    textHeight = (imageHeight - 140)
     
     context.fillText(text, textWidth, textHeight);
 
@@ -50,7 +50,7 @@ downloadCardButton.addEventListener('click', function(e){
     document.getElementById('name').value = "";
 
     // download the image
-    DownloadCanvasAsImage();
+    //DownloadCanvasAsImage();
 });
 
 
