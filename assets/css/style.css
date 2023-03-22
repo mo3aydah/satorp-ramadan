@@ -1,0 +1,53 @@
+.image {
+    width: 500px;
+    height: 700px;
+}
+
+body {
+    background: url("../../assets/images/background-color.jpg");
+}
+
+
+@font-face {
+    font-family: "IBMPlexSansArabic";
+    src: url(../fonts/IBMPlexSansArabic-Light.ttf);
+}
+
+
+@font-face {
+    font-family: "Bahij";
+    src: url(../fonts/Bahij_Bold.ttf);
+}
+
+
+@font-face {
+    font-family: "GESSTwoLight";
+    src: url(../fonts/GESSTwoLight.otf);
+}
+
+
+@font-face {
+    font-family: "GESSTwoMedium";
+    src: url(../fonts/GESSTwoMedium.otf);
+}
+
+#myCanvas{
+    font-family: "GESSTwoMedium";
+    max-height: 800px;
+}
+
+
+.container {
+    display: block;
+    margin: auto;
+    height: auto;
+  }
+
+canvas {
+    max-width: 100%;
+    object-fit: contain;
+}
+
+body{
+    font-family: "GESSTwoMedium";
+}
